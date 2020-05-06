@@ -5,13 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
 
 const Navigation = (props) => {
-    const switchClick = () => {
-        if (props.user.username) {
-            props.loginUser(null)
-        } else {
-            console.log(props.user.username)
-        }
-    }
+   
     return (
         <AppBar position="relative">
             <Toolbar>
@@ -23,12 +17,10 @@ const Navigation = (props) => {
                         <Link to="/">Listing</Link>
                     </li>
                     <li className="nav-list-item">
-                        {props.user.username ? <Link onClick={switchClick}>Logout</Link> :
-                        <Link onClick={switchClick} to="/login">Login</Link>}
+                       
                     </li>
                     <li className="nav-list-item">
-                        {props.user.username ? <Link onClick={switchClick}>Logout</Link> :
-                        <Link onClick={switchClick} to="/add">Add</Link>}
+                        
                     </li>
                     
                 </ul>

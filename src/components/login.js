@@ -6,6 +6,7 @@ import {
   Button,
   Container
 } from '@material-ui/core'
+import Map from './Map'
 
 
 
@@ -50,6 +51,7 @@ const Login = (props) => {
                 variant="contained"
                 color="primary">Login</Button>
         </form>
+        <Map/>
         </Container>
       </div>
     );
