@@ -5,7 +5,7 @@ import { addBusiness, test } from '../redux/actions'
 const mapDispatchToProps = (dispatch) => {
     return {
         addBusiness: (business) => dispatch(addBusiness(business)),
-        test: (index) => dispatch(test(index))
+        
     }
 }
 

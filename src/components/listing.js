@@ -2,11 +2,13 @@ import React from 'react'
 import {Table, TableBody, TableRow, TableHead, TableCell} from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import AddBusiness from '../container/AddBusiness'
+import DeleteIcon from '@material-ui/icons/Delete'
 
 
 
 const listing = (props) => {
-  console.log (props)
+//   console.log (props)
+  console.log(props.shop)
   return (
     <div className="wrapper">
     <p>Grapple with the Natives</p>
@@ -24,11 +26,11 @@ const listing = (props) => {
             <TableCell>Hours</TableCell>
         </TableRow>
     </TableHead>
-    <TableBody>
-    {props.business.map((business1, idx) =>( 
+    {/* <TableBody>
+    {props.shop.map((business1, idx) =>( 
         <TableRow key={business1.id} >
         <TableCell component="th" scope="row">
-        <Link to={`/business/${business1.id}`} > {business1['name']} </Link> 
+          {business1['Name']} 
             </TableCell>
             <TableCell> {business1['description']}</TableCell>
             <TableCell> {business1['address']}</TableCell>
@@ -40,7 +42,8 @@ const listing = (props) => {
             </TableCell>
         </TableRow>
         ))}
-    </TableBody>
+    </TableBody> */}
+    
 </Table>
 
 </div>
