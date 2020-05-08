@@ -10,18 +10,18 @@ const user = (state = null, action) => {
     }
 }
 
-const business = (state = [], action) => {
+const shop = (state = [], action) => {
     switch(action.type) {
         case 'ADD_BUSINESS':
             return [ ...state, action.value ]
         case 'REMOVE_BUSINESS':
-            const business = [ ...state ]
-            business.splice(action.value, 1)
-            return business
+            const shop = [ ...state ]
+            shop.splice(action.value, 1)
+            return shop
         default:
             return state
     }
 }
 
 
-export default combineReducers({ business, user })
+export default combineReducers({ shop, user })

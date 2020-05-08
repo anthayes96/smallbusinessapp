@@ -8,7 +8,7 @@ import DeleteIcon from '@material-ui/icons/Delete'
 
 const listing = (props) => {
 //   console.log (props)
-  console.log(props.shop)
+  console.log(props)
   return (
     <div className="wrapper">
     <p>Grapple with the Natives</p>
@@ -26,7 +26,7 @@ const listing = (props) => {
             <TableCell>Hours</TableCell>
         </TableRow>
     </TableHead>
-    {/* <TableBody>
+    <TableBody>
     {props.shop.map((business1, idx) =>( 
         <TableRow key={business1.id} >
         <TableCell component="th" scope="row">
@@ -42,7 +42,7 @@ const listing = (props) => {
             </TableCell>
         </TableRow>
         ))}
-    </TableBody> */}
+    </TableBody>
     
 </Table>
 
