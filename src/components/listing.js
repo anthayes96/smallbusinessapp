@@ -13,8 +13,7 @@ const listing = (props) => {
   return (
     <div className="wrapper">
     <p>Food For everyone</p>
-    <h4>Atx Local Insiders</h4>
-    {props.user.username && <AddBusiness  /> 
+   <AddBusiness  /> 
     }
     {/* bizTotal={props.addBusiness} */}
     
@@ -38,9 +37,8 @@ const listing = (props) => {
             <TableCell> {business1['address']}</TableCell>
             <TableCell> {business1['hours']}</TableCell>
             <TableCell>
-            {props.user.username && <DeleteIcon 
-                onClick={() => props.removeBusiness(idx)}
-                className="icon"/>}
+            <DeleteIcon 
+               />
             </TableCell>
         </TableRow>
         ))}

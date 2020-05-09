@@ -1,7 +1,7 @@
-export const addBusiness = (business) => {
+export const addBusiness = (shop) => {
   return {
       type: 'ADD_BUSINESS',
-      value: business
+      value: shop
   }
 }
 
