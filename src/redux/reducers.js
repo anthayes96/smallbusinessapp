@@ -24,4 +24,4 @@ const shop = (state = [], action) => {
 }
 
 
-export default combineReducers({ shop, user })
+export default combineReducers({ shop, user, })

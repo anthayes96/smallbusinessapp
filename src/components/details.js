@@ -7,7 +7,7 @@ export default function Details(props) {
     <div>
       
       <div className = "details">
-      <h1>{shop.Name}Guinea pig</h1>
+      <h1>{shop.Name}</h1>
       <h2>{shop.address}</h2>
       <h2>{shop.hours}</h2>
       <p>{shop.description}</p>

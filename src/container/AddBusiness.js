@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import AddBusiness from '../components/AddBusiness'
-import { addBusiness, test } from '../redux/actions'
 
 const mapDispatchToProps = (dispatch) => {
     return {

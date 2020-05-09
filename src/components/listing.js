@@ -6,16 +6,18 @@ import DeleteIcon from '@material-ui/icons/Delete'
 
 
 
+
 const listing = (props) => {
 //   console.log (props)
-  console.log(props)
+  console.log(props.user.username)
   return (
     <div className="wrapper">
-    <p>Grapple with the Natives</p>
+    <p>Food For everyone</p>
     <h4>Atx Local Insiders</h4>
     {props.user.username && <AddBusiness  /> 
     }
     {/* bizTotal={props.addBusiness} */}
+    
 
 <Table>
     <TableHead>
